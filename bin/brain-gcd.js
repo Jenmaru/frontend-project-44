@@ -18,7 +18,6 @@ for (i = 0; i < four; i++) {
 	let one = randomInteger(1, 100);
 	let two = randomInteger(1, 100);
 	let divider = GCD(one, two);
-	console.log(divider);
 	console.log('Question: ' + one + " " + two);
 	let answer = readlineSync.question('Your answer: ');
 	if (answer == divider) {
@@ -32,5 +31,5 @@ for (i = 0; i < four; i++) {
 	};
 };
 if (correct == 3) {
-	console.log('Congratulations ' + name + '!');
+	console.log('Congratulations, ' + name + '!');
 };

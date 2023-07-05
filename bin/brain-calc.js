@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-import RandomFor from '../src/index.js'
+import randomInteger from '../src/index.js'
 import readlineSync from 'readline-sync';
+import  newfunc  from '../src/cli.js';
 console.log('brain-calc');
 console.log('');
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log('Hello, ' + name + '!');
+newfunc();
 console.log('What is the result of the expression?');
 const four = 3;
 let i = 0;
@@ -14,10 +13,6 @@ let q = RandomFor();
 console.log(q);
 const znak = ['-', '+', '*'];
 for (i = 0; i < four; i++) {
-    function randomInteger(min, max) {
-    let rand = min + Math.random() * (max + 1 - min);
-    return Math.floor(rand);
-  };
   let multiplier = randomInteger(1, 100);
   let multiply = randomInteger(1, 100);
   let action = randomInteger(1, 3);
