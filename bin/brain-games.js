@@ -1,8 +1,10 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-console.log('node bin/brain-games.js');
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log('Hello, ' + name + '!');
+
+import  newfunc  from '../src/cli.js';
+console.log('bin/brain-games.js');
+console.log('');
+newfunc();
+
+
 
   

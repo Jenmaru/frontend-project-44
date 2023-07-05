@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import RandomFor from '../src/index.js'
 import readlineSync from 'readline-sync';
 console.log('brain-calc');
 console.log('');
@@ -9,6 +10,8 @@ console.log('What is the result of the expression?');
 const four = 3;
 let i = 0;
 let correct = 0;
+let q = RandomFor();
+console.log(q);
 const znak = ['-', '+', '*'];
 for (i = 0; i < four; i++) {
     function randomInteger(min, max) {

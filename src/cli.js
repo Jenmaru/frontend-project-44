@@ -1,6 +1,11 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-export default Hello = () => {
-    
-    
-    console.log('What is the result of the expression?');
+export default function newfunc() {
+
+console.log('Welcome to the Brain Games!');
+const name = readlineSync.question('May I have your name? ');
+console.log('Hello, ' + name + '!');
+
+return name;
 };
+

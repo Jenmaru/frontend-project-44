@@ -1,10 +1,9 @@
 #!/usr/bin/env node
+import  newfunc  from '../src/cli.js';
 import readlineSync from 'readline-sync';
 console.log('brain-even');
 console.log('');
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log('Hello, ' + name + '!');
+const name = newfunc();
 console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
 const four = 3;
 let i = 0;
