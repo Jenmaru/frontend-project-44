@@ -15,14 +15,6 @@ const four = 3;
         console.log('Question: ' + random);
         let answer = readlineSync.question('Your answer: ');
         let correct = '';
-        let dividenum = 0;
-        let division = 0;
-        for (q = 0; q <= random; q++) {
-            dividenum += 1;
-            if (random % dividenum === 0) {
-                division += 1;
-            }
-          }
         if (random % 2 === 0) {
           correct = 'yes';
         };
