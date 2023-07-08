@@ -42,7 +42,7 @@ if (answer != InvNum) {
     break;
 };
 };
-if ( correct === 3) {
+if (correct === 3) {
     console.log('Congratulations, ' + name + '!');
 };
 

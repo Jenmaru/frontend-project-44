@@ -12,7 +12,7 @@ let correctnum = 0;
 for (i = 0; i < four; i++) {
 let random = randomInteger(1, 100);
   console.log('Question: ' + random);
-  let answer = readlineSync.question('Your answer: ');
+  let ansber = readlineSync.question('Your answer: ');
   let correct = '';
   let q = 0;
   let dividenum = 0;
@@ -29,13 +29,16 @@ let random = randomInteger(1, 100);
   if (division > 2) {
     correct = 'no';
   }
-  if (answer === correct) {
+  if (ansber === correct) {
     console.log('Correct!');
     correctnum += 1;
 }
 else { 
-  console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'no'.");
+  console.log("'" + ansber + "'" + " is wrong answer ;(. Correct answer was 'no'.");
 console.log("Let's try again, " + name + "!");
 break; 
 }
-}
+if (correctnum === 3) {
+    console.log('Congratulations, ' + name + "!");
+};
+};
