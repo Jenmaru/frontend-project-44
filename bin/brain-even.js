@@ -16,28 +16,19 @@ for (i = 0; i < four; i++) {
   let correct = '';
   if (random % 2 === 0) {
     correct = 'yes';
-    if (answer === correct) {
-      console.log('Correct!');
-        correctnum += 1;
-    }
-    else { 
-      console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'no'.");
-    console.log("Let's try again, " + name + "!");
-    break; 
-  }
   };
   if (random % 2 !== 0) {
     correct = 'no';
-    if (answer === correct) {
-      console.log('Correct!');
-        correctnum += 1;
-    }
-    else { 
-      console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'no'.");
-    console.log("Let's try again, " + name + "!");
-    break; 
-  }
   };
+  if (answer === correct) {
+    console.log('Correct!');
+      correctnum += 1;
+  }
+  else { 
+    console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'no'.");
+  console.log("Let's try again, " + name + "!");
+  break; 
+}
 }
 if (correctnum === 3) {
     console.log('Congratulations, ' + name + "!");

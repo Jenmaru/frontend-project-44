@@ -25,26 +25,17 @@ let random = randomInteger(1, 100);
   }
   if (division === 2) {
     correct = 'yes';
-    if (answer === correct) {
-        console.log('Correct!');
-        correctnum += 1;
-    }
-    else { 
-      console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'no'.");
-    console.log("Let's try again, " + name + "!");
-    break; 
-    }
   }
   if (division > 2) {
     correct = 'no';
-    if (answer === correct) {
-        console.log('Correct!');
-        correctnum += 1;
-    }
-    else { 
-      console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'no'.");
-    console.log("Let's try again, " + name + "!");
-    break; 
-    }
   }
+  if (answer === correct) {
+    console.log('Correct!');
+    correctnum += 1;
+}
+else { 
+  console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'no'.");
+console.log("Let's try again, " + name + "!");
+break; 
+}
 }
