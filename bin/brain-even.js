@@ -9,7 +9,6 @@ console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
 let correctnum = 0;
 const four = 3;
     let i = 0;
-    let q = 0;
     for (i = 0; i < four; i++) {  
         let random = randomInteger(1, 100);
         console.log('Question: ' + random);
@@ -21,7 +20,7 @@ const four = 3;
         if (random % 2 !== 0) {
           correct = 'no';
         }; 
-        if (answer === correct) {
+        if (answer == correct) {
           console.log('Correct!');
           correctnum += 1;
           }
