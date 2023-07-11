@@ -28,7 +28,6 @@ for (q = 0; q < four; q++) {
     };
 };
 console.log('Question: ' + progression.join(' '));
-
 let answer = readlineSync.question('Your answer: ');
 if (answer == InvNum) {
     console.log("Correct!");
