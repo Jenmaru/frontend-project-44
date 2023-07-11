@@ -24,7 +24,7 @@ const four = 3;
           console.log('Correct!');
           correctnum += 1;
           }
-          else { 
+        if (answer != correct) { 
           console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correct + "'" + ".");
           console.log("Let's try again, " + name + "!");
           break;
