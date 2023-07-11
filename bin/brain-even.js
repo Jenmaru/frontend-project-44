@@ -20,11 +20,11 @@ const four = 3;
         if (random % 2 !== 0) {
           correct = 'no';
         }; 
-        if (answer == correct) {
+        if (answer === correct) {
           console.log('Correct!');
           correctnum += 1;
           }
-        if (answer != correct) { 
+        if (answer !== correct) { 
           console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correct + "'" + ".");
           console.log("Let's try again, " + name + "!");
           break;
