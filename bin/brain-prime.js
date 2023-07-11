@@ -2,6 +2,7 @@
 import  newfunc  from '../src/cli.js';
 import randomInteger from '../src/index.js';
 import readlineSync from 'readline-sync';
+import conclusion from '../src/index1.js'
 console.log('brain-prime');
 console.log('');
 const name = newfunc();
@@ -29,7 +30,7 @@ const four = 3;
         if (division !== 2) {
           correct = 'no';
         }; 
-        if (answer === correct) {
+        if (answer == correct) {
           console.log('Correct!');
           correctnum += 1;
           }
