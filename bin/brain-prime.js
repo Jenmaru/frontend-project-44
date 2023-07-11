@@ -2,7 +2,6 @@
 import  newfunc  from '../src/cli.js';
 import randomInteger from '../src/index.js';
 import readlineSync from 'readline-sync';
-import conclusion from '../src/index1.js'
 console.log('brain-prime');
 console.log('');
 const name = newfunc();
@@ -14,7 +13,6 @@ const four = 3;
     for (i = 0; i < four; i++) {  
         let random = randomInteger(1, 100);
         console.log('Question: ' + random);
-        let answer = readlineSync.question('Your answer: ');
         let correct = '';
         let dividenum = 0;
         let division = 0;
@@ -30,6 +28,7 @@ const four = 3;
         if (division !== 2) {
           correct = 'no';
         }; 
+        let answer = readlineSync.question('Your answer: ');
         if (answer == correct) {
           console.log('Correct!');
           correctnum += 1;

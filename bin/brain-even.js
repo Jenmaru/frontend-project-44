@@ -12,7 +12,6 @@ const four = 3;
     for (i = 0; i < four; i++) {  
         let random = randomInteger(1, 100);
         console.log('Question: ' + random);
-        let answer = readlineSync.question('Your answer: ');
         let correct = '';
         if (random % 2 === 0) {
           correct = 'yes';
@@ -20,6 +19,7 @@ const four = 3;
         if (random % 2 !== 0) {
           correct = 'no';
         }; 
+        let answer = readlineSync.question('Your answer: ');
         if (answer === correct) {
           console.log('Correct!');
           correctnum += 1;
