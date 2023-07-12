@@ -1,4 +1,3 @@
-import newfunc from '../cli.js';
 import logic from '../index1.js';
 import randomInteger from '../index.js';
 
@@ -9,8 +8,7 @@ function GCD(x, y) {
 }
 console.log('brain-gcd');
 console.log('');
-const name = newfunc();
-console.log('Find the greatest common divisor of given numbers.');
+const conditionExec = 'Find the greatest common divisor of given numbers.';
 
 const answer = () => {
   const one = randomInteger(1, 100);
@@ -20,7 +18,7 @@ const answer = () => {
   return [question, String(correctanswer)];
 };
 const initialize = () => {
-  logic(name, answer);
+  logic(conditionExec, answer);
 };
 
 export default initialize;

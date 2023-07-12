@@ -1,11 +1,9 @@
-import newfunc from '../cli.js';
 import randomInteger from '../index.js';
 import logic from '../index1.js';
 
 console.log('brain-progression');
 console.log('');
-const name = newfunc();
-console.log('What number is missing in the progression?');
+const conditionExec = 'What number is missing in the progression?';
 const answer = () => {
   let i = 0;
   const progression = [];
@@ -28,7 +26,7 @@ const answer = () => {
 };
 
 const initialize = () => {
-  logic(name, answer);
+  logic(conditionExec, answer);
 };
 
 export default initialize;

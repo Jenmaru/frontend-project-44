@@ -3,7 +3,11 @@ import readlineSync from 'readline-sync';
 const rounds = 3;
 let i = 0;
 let correctnum = 0;
-const logic = (name, correct) => {
+const logic = (condExec, correct) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(condExec);
   for (i = 0; i < rounds; i += 1) {
     const [question, correctanswer] = correct();
     console.log(`Question: ${question}`);

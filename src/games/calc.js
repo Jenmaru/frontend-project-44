@@ -1,11 +1,9 @@
 import randomInteger from '../index.js';
 import logic from '../index1.js';
-import newfunc from '../cli.js';
 
 console.log('brain-calc');
 console.log('');
-const name = newfunc();
-console.log('What is the result of the expression?');
+const conditionExec = 'What is the result of the expression?';
 const answer = () => {
   const one = randomInteger(1, 100);
   const two = randomInteger(1, 100);
@@ -21,7 +19,7 @@ const answer = () => {
   return [question, String(correctanswer)];
 };
 const initialize = () => {
-  logic(name, answer);
+  logic(conditionExec, answer);
 };
 
 export default initialize;

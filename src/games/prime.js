@@ -1,11 +1,9 @@
-import newfunc from '../cli.js';
 import randomInteger from '../index.js';
 import logic from '../index1.js';
 
 console.log('brain-prime');
 console.log('');
-const name = newfunc();
-console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+const conditionExec = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const Number = (random) => random === 2;
 const answer = () => {
   const question = randomInteger(1, 100);
@@ -23,7 +21,7 @@ const answer = () => {
 };
 
 const initialize = () => {
-  logic(name, answer);
+  logic(conditionExec, answer);
 };
 
 export default initialize;
