@@ -1,11 +1,10 @@
+# https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
-  commonjs: true
-  es2021: true
   node: true
-extends: airbnb-base
-parserOptions:
-  ecmaVersion: latest
-rules: {
-  no-console: false
-  import/extensions: false
-}
+
+extends:
+  - 'airbnb-base'
+  
+rules:
+  no-console: 0
+  import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version

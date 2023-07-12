@@ -1,6 +1,7 @@
-import  newfunc  from '../cli.js';
+import newfunc from '../cli.js';
 import randomInteger from '../index.js';
 import logic from '../index1.js';
+
 console.log('brain-prime');
 console.log('');
 const name = newfunc();
@@ -11,21 +12,18 @@ const answer = () => {
   let q = 0;
   let division = 0;
   let dividenum = 0;
-  for (q = 0; q <= question; q++) {
+  for (q = 0; q <= question; q += 1) {
     dividenum += 1;
     if (question % dividenum === 0) {
-        division += 1;
+      division += 1;
     }
-}
-const correctanswer = Number(division) ? 'yes' : 'no';
-return [question, correctanswer];
+  }
+  const correctanswer = Number(division) ? 'yes' : 'no';
+  return [question, correctanswer];
 };
-
 
 const initialize = () => {
   logic(name, answer);
 };
-
-
 
 export default initialize;
