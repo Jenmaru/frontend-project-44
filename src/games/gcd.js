@@ -17,7 +17,7 @@ const answer = () => {
   const two = randomInteger(1, 100);
   const correctanswer = GCD(one, two);
   const question = `${one} ${two}`;
-  return [question, correctanswer];
+  return [question, String(correctanswer)];
 };
 const initialize = () => {
   logic(name, answer);

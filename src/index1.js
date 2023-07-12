@@ -9,12 +9,12 @@ const logic = (name, correct) => {
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
-    if (answer == correctanswer) {
+    if (answer === correctanswer) {
       console.log('Correct!');
       correctnum += 1;
     }
-    if (answer != correctanswer) {
-      console.log(`'${answer}'` + ' is wrong answer ;(. Correct answer was ' + `'${correctanswer}'` + '.');
+    if (answer !== correctanswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctanswer}'.`);
       console.log(`Let's try again, ${name}!`);
       break;
     }

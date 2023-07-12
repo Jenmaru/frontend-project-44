@@ -18,7 +18,7 @@ const answer = () => {
   const znak2 = ['-', '+', '*'];
   const question = `${one} ${znak2[action]} ${two}`;
   const correctanswer = znak[action];
-  return [question, correctanswer];
+  return [question, String(correctanswer)];
 };
 const initialize = () => {
   logic(name, answer);
