@@ -3,7 +3,7 @@ const rounds = 3;
 let i = 0;
 let correctnum = 0;
 const logic = (name, correct) => {
-for (i = 0; i < rounds; i++) {
+for (i = 0; i < rounds; i += 1) {
     let [question, correctanswer] = correct();
     console.log('Question: ' + question);
     let answer = readlineSync.question('Your answer: ');
