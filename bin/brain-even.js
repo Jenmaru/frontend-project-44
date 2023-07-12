@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import initialize from '../src/games/brain-even.js';
+import initialize from '../src/games/even.js';
 
 initialize();

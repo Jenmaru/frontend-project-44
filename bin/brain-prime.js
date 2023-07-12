@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import initialize from '../src/games/brain-prime.js';
+import initialize from '../src/games/prime.js';
 
 initialize();
