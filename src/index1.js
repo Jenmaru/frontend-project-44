@@ -8,11 +8,11 @@ for (i = 0; i < rounds; i += 1) {
     console.log('Question: ' + question);
     let answer = readlineSync.question('Your answer: ');
     
-    if (answer === correctanswer) {
+    if (answer == correctanswer) {
         console.log('Correct!');
         correctnum += 1;
         }
-      if (answer !== correctanswer) { 
+      if (answer != correctanswer) { 
         console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correctanswer + "'" + ".");
         console.log("Let's try again, " + name + "!"); 
         break;
