@@ -27,8 +27,8 @@ const answer = () => {
         random += d;
       }
     }
+    return [progression.join(' '), InvNum];
   }
-  return [progression.join(' '), InvNum];
 };
 
 const initialize = () => {
