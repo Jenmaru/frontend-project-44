@@ -1,16 +1,27 @@
 import readlineSync from 'readline-sync';
-export default function logic(name, correct, correctnum) {
-    let i = 0;
-    for (i = 0; i < 1; i ++) {
+const rounds = 3;
+let i = 0;
+let correctnum = 0;
+const logic = (name, correct) => {
+for (i = 0; i < rounds; i++) {
+    let [question, correctanswer] = correct();
+    console.log('Question: ' + question);
     let answer = readlineSync.question('Your answer: ');
-        if (answer === correct) {
-          console.log('Correct!');
-          return correctnum += 1;
-          }
-        if (answer !== correct) { 
-          console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correct + "'" + ".");
-          console.log("Let's try again, " + name + "!"); 
-          return false;
-          }
+    
+    if (answer === correctanswer) {
+        console.log('Correct!');
+        correctnum += 1;
         }
+      if (answer !== correctanswer) { 
+        console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correctanswer + "'" + ".");
+        console.log("Let's try again, " + name + "!"); 
+        break;
+        }
+        }
+        if (correctnum === 3) {
+            console.log('Congratulations, ' + name + "!");
+          };
     };
+
+    export default logic;
+    
