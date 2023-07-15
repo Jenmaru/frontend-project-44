@@ -1,27 +1,18 @@
-import randomInteger from '../index.js';
-import logic from '../index1.js';
+import randomInteger from '../randomInt.js';
+import produceLogic from '../index.js';
+import isPrime from '../isPrime.js';
 
-console.log('brain-prime');
-console.log('');
-const conditionExec = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const Number = (random) => random === 2;
-const answer = () => {
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const isNumber = (random) => random === 2;
+const doAnswer = () => {
   const question = randomInteger(1, 100);
-  let q = 0;
-  let division = 0;
-  let dividenum = 0;
-  for (q = 0; q <= question; q += 1) {
-    dividenum += 1;
-    if (question % dividenum === 0) {
-      division += 1;
-    }
-  }
-  const correctanswer = Number(division) ? 'yes' : 'no';
+  const division = isPrime(question);
+  const correctanswer = isNumber(division) ? 'yes' : 'no';
   return [question, correctanswer];
 };
 
-const initialize = () => {
-  logic(conditionExec, answer);
+const run = () => {
+  produceLogic(description, doAnswer);
 };
 
-export default initialize;
+export default run;

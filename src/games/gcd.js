@@ -1,24 +1,18 @@
-import logic from '../index1.js';
-import randomInteger from '../index.js';
+import randomInteger from '../randomInt.js';
+import produceLogic from '../index.js';
+import GCD from '../isGcd.js';
 
-function GCD(x, y) {
-  if (y > x) return GCD(y, x);
-  if (!y) return x;
-  return GCD(y, x % y);
-}
-console.log('brain-gcd');
-console.log('');
-const conditionExec = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
-const answer = () => {
+const doAnswer = () => {
   const one = randomInteger(1, 100);
   const two = randomInteger(1, 100);
-  const correctanswer = GCD(one, two);
+  const isCorrectAnswer = GCD(one, two);
   const question = `${one} ${two}`;
-  return [question, String(correctanswer)];
+  return [question, String(isCorrectAnswer)];
 };
-const initialize = () => {
-  logic(conditionExec, answer);
+const run = () => {
+  produceLogic(description, doAnswer);
 };
 
-export default initialize;
+export default run;
