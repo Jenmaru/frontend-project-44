@@ -8,7 +8,8 @@
 
 #### Демонстрация установки пакета "Игры разума":
 
-[![asciicast](https://asciinema.org/a/mK50JKvJRLpI9aOWv0wldntX7.svg)](https://asciinema.org/a/mK50JKvJRLpI9aOWv0wldntX7)
+[![asciicast]( https://asciinema.org/a/MJhirGuCLXBqKFFqTVw6ZKmhq
+)
 
 ### Теперь можно запустить следующие игры:
 Все игры заканчиваются после трех правильных ответов подряд.
