@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/Jenmaru/frontend-project-44/workflows/hexlet-check/badge.svg)(https://github.com/Jenmaru/frontend-project-44/actions) <a href="https://codeclimate.com/github/Jenmaru/frontend-project-44"><img src="https://api.codeclimate.com/v1/badges/d7abe28483f39b267bd8/maintainability" /></a>
+[![Actions Status](https://github.com/Jenmaru/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Jenmaru/frontend-project-44/actions) <a href="https://codeclimate.com/github/Jenmaru/frontend-project-44"><img src="https://api.codeclimate.com/v1/badges/d7abe28483f39b267bd8/maintainability" /></a>
 
 ## Для установки пакета необходимо:
 - клонировать репозиторий
@@ -7,7 +7,7 @@
 
 #### Демонстрация установки пакета "Игры разума":
 
-[![asciicast]( https://asciinema.org/a/MJhirGuCLXBqKFFqTVw6ZKmhq.svg)( https://asciinema.org/a/MJhirGuCLXBqKFFqTVw6ZKmhq)
+[![asciicast]( https://asciinema.org/a/MJhirGuCLXBqKFFqTVw6ZKmhq.svg)]( https://asciinema.org/a/MJhirGuCLXBqKFFqTVw6ZKmhq)
 
 ### Теперь можно запустить следующие игры:
 Все игры заканчиваются после трех правильных ответов подряд.
