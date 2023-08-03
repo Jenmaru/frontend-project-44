@@ -1,11 +1,11 @@
 {
-  "name": "@hexlet/code",
+  "name": "jenmaru-brain-games",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Jenmaru/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Jenmaru/frontend-project-44/actions)",
+  "description": "Учебный проект по JS \"Игры разума\"",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "start"
   },
-  "author": "",
+  "author": "jenmaru",
   "license": "ISC",
   "type": "module",
   "bin": {
@@ -15,6 +15,11 @@
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
+  },
+  "main": "bin/brain-games.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jenmaru/frontend-project-44.git"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
