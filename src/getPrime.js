@@ -1,4 +1,4 @@
-export default function isPrime(question) {
+export default function getPrime(question) {
   let q = 0;
   let division = 0;
   let dividenum = 0;

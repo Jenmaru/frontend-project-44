@@ -1,19 +1,20 @@
-import randomInteger from '../randomInt.js';
+import getRandomInteger from '../getRandomInteger.js';
 import produceLogic from '../index.js';
-import doOperation from '../dooperation.js';
+import calculate from '../getSign.js';
 
 const description = 'What is the result of the expression?';
-const doAnswer = () => {
-  const num1 = randomInteger(1, 100);
-  const num2 = randomInteger(1, 100);
-  const index = randomInteger(0, 2);
-  const znak2 = ['+', '-', '*'];
-  const question = `${num1} ${znak2[index]} ${num2}`;
-  const correctanswer = doOperation(num1, num2, index);
-  return [question, String(correctanswer)];
+
+const getRound = () => {
+  const number1 = getRandomInteger(1, 100);
+  const number2 = getRandomInteger(1, 100);
+  const operators = ['+', '-', '*'];
+  const index = operators[getRandomInteger(0, operators.length - 1)];
+  const question = `${number1} ${index} ${number2}`;
+  const correctAnswer = calculate(number1, number2, index);
+  return [question, String(correctAnswer)];
 };
 const run = () => {
-  produceLogic(description, doAnswer);
+  produceLogic(description, getRound);
 };
 
 export default run;

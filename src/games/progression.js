@@ -1,20 +1,24 @@
-import randomInteger from '../randomInt.js';
+import getRandomInteger from '../getRandomInteger.js';
 import produceLogic from '../index.js';
-import doProgression from '../progressionModule.js';
+import getProgression from '../progressionModule.js';
 
 const description = 'What number is missing in the progression?';
-const doAnswer = () => {
-  const hiddenPos = randomInteger(0, 9);
-  const progression = [];
+const getRound = () => {
+  const lastNumber = 100;
+  const firstNumber = getRandomInteger(1, lastNumber);
+  const maxProgressionCount = 10;
+  const progressionLength = 10;
+  const progressionCount = getRandomInteger(1, maxProgressionCount);
+  const progression = getProgression(firstNumber, progressionCount, progressionLength);
   const hiddenNum = '..';
-  doProgression(progression);
-  const trueNum = progression[hiddenPos];
+  const hiddenPos = getRandomInteger(0, progression.length - 1);
+  const answer = progression[hiddenPos];
   progression.splice(hiddenPos, 1, hiddenNum);
-  return [progression.join(' '), String(trueNum)];
+  return [progression.join(' '), String(answer)];
 };
 
 const run = () => {
-  produceLogic(description, doAnswer);
+  produceLogic(description, getRound);
 };
 
 export default run;
