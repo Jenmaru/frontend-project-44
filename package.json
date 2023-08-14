@@ -16,7 +16,6 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "main": "bin/brain-games.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jenmaru/frontend-project-44.git"
