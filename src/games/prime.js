@@ -15,11 +15,11 @@ function getPrime(question) {
 }
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const isNumber = (random) => random === 2;
+const isPrime = (number) => number === 2;
 const getRound = () => {
   const question = getRandomNumber(1, 100);
-  const isPrime = isNumber(getPrime(question)) ? 'yes' : 'no';
-  return [question, isPrime];
+  const answer = isPrime(getPrime(question)) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 const run = () => {
