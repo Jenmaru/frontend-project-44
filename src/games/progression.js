@@ -1,6 +1,13 @@
 import getRandomNumber from '../utils.js';
 import startEngine from '../index.js';
-import getProgression from './progressionModule.js';
+
+function getProgression(randomNumber, count, length) {
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression.push(randomNumber + count * i);
+  }
+  return progression;
+}
 
 const description = 'What number is missing in the progression?';
 const getRound = () => {

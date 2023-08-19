@@ -1,6 +1,11 @@
 import getRandomNumber from '../utils.js';
 import startEngine from '../index.js';
-import getGcd from './getGCD.js';
+
+function getGcd(x, y) {
+  if (y > x) return getGcd(y, x);
+  if (!y) return x;
+  return getGcd(y, x % y);
+}
 
 const description = 'Find the greatest common divisor of given numbers.';
 
